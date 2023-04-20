@@ -17,5 +17,13 @@
     "globally": "^0.0.0",
     "package": "^1.0.1",
     "with": "^7.0.2"
+  },
+  "dependencies": {
+    "assert-never": "^1.2.1",
+    "babel-walk": "^3.0.0-canary-5",
+    "graceful-fs": "^4.2.11",
+    "jsonfile": "^6.1.0",
+    "to-fast-properties": "^2.0.0",
+    "universalify": "^2.0.0"
   }
 }
