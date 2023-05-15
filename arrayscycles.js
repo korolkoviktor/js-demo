@@ -38,15 +38,20 @@ console.log(newArr);
 /* Write a function that takes two parameters - an array and a number and outputs the index 
 of an array element equal to a number*/
 function displArrElem(arr, elemnum) {
+    if (elemnum < 0 && Number.isInteger(elemnum)) {
+        return console.log('The number parametr should be =>0');
+    }
     for (let ind = 0; ind < arr.length; ind++) {
-        if (ind == elemnum) {
+        if (elemnum == arr[ind]) {
             return console.log('Index=' + ind);
         };
     };
     return console.log('Index not found');
 };
 console.log('\nOutput the index of an array:');
-displArrElem([4, 4, 8, 1, 2], 2);
+displArrElem([4, 4, 8, 1, 2], 5);
+displArrElem([4, 4, 8, 1, 2], -1);
+displArrElem([4, 4, 8, 1, 2], 1);
 
 // Implement a loop that will print the number 'a' until it is less than 10
 let a = 30;
