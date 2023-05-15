@@ -16,12 +16,12 @@ let warehouse = {
   apples: 14
 };
 function sumFruits(cart) {
-  let sum = cart.pears+cart.apples;
-    return function printSum() {
+  let sum = cart.pears + cart.apples;
+  return function printSum() {
     console.log('\nSum of pears and apples = ' + sum);
   };
 };
-let fruits=sumFruits(warehouse);
+let fruits = sumFruits(warehouse);
 fruits();
 
 /*Your name is saved in the payment terminal, write a function to define the name in the terminal 
@@ -54,13 +54,21 @@ function showTypeofValue(arg) {
 showTypeofValue(NaN);
 
 //Write a function that determines whether a number is prime or not
+console.log('\nDefining a prime number:')
 function deternPrimeNumber(num) {
+  if (num <= 1) {
+    return console.log('You should enter a number more then 1');
+  }
+  if (num == 2) {
+    return console.log('The number ' + num + ' is the prime number');
+  } 
   for (i = 2; i < num; i++) {
     if (num % i == 0) {
-      console.log('\nThe number ' + num + ' is not prime');
-      return;
-    }
-    return console.log('\nThe number ' + num + ' is prime number');
-  }
+        return console.log('The number ' + num + ' is not prime');
+      }
+      return console.log('The number ' + num + ' is the prime number');
+    }  
 }
-deternPrimeNumber(16);
+deternPrimeNumber(397);
+deternPrimeNumber(0);
+deternPrimeNumber(2);
