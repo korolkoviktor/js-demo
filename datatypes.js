@@ -31,7 +31,7 @@
 // 2. Divide different types 
 {//string / boolean
     console.log('Perform division of different types');
-    console.log('string / boolean = ' + typeof ('24' / true) + '   ("text"/true=' + ('24' / true) + ')');
+    console.log('string / boolean = ' + typeof ('24' / true) + '   ("24"/true=' + ('24' / true) + ')');
     console.log('string / boolean = ' + typeof ('text' / false) + '   ("text"/false=' + ('text' / false) + ')');
 };
 {//string / number
