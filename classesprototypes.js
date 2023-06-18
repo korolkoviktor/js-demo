@@ -5,13 +5,14 @@ class Animal {
         this.smell=true;
         this.hear=true;
         this.watch=true;
+        this.move=true;
     }
 }
-
-const animal=new Animal();
-const cat = new Object();
-cat.__proto__=animal;
-
-animal.move = true; // add new property
-
+class Cat extends Animal {
+    constructor() {
+        super();
+        this.tail=true;
+    }
+}
+const cat = new Cat();
 console.log(cat.move); //display result - cat inherit animal property
